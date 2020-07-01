@@ -219,7 +219,7 @@ class ControlOther{
                 },1000)
             }).then(result=>{ 
                 $.post({
-                    url: "http://localhost:9081/submit/signup",
+                    url: "http://www.yjxyjx.club:9081/submit/signup",
                     data: {
                         nickname:$('#username-input').val(),
                         password:$('#password-input').val(),
