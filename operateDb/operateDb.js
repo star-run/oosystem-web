@@ -14,6 +14,9 @@ exports.creAndConn = function(host,user,password,database){
 }
 
 exports.execquery = function(sqlstr,callback){
+    if(!connection){
+        throw new Error('noconnection')
+    }
     connection.query(sqlstr,(err,data,fields)=>{
         callback(err,data)
     })
